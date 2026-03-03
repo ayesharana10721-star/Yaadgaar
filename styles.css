@@ -1331,8 +1331,16 @@ i {
     .testimonial-bg-overlay,
     .hero {
         background-attachment: scroll !important;
-        background-position: center center !important;
+        background-position: center top !important;
+        /* Focal point fix */
         background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .hero {
+        min-height: 100vh !important;
+        min-height: 100svh !important;
+        height: auto !important;
     }
 }
 
@@ -1411,7 +1419,8 @@ i {
     }
 
     .welcome-text h2 {
-        font-size: 1.6rem !important;
+        font-size: 1.5rem !important;
+        /* Even smaller for very small screens */
     }
 
     #welcome {
