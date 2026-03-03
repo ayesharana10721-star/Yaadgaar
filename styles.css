@@ -16,15 +16,19 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Outfit', sans-serif;
     color: var(--text-dark);
     background-color: var(--bg-light);
     line-height: 1.6;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h1,
@@ -52,6 +56,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .logo a {
@@ -857,20 +862,21 @@ footer {
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: 0;
         width: 80%;
         height: 100vh;
         background-color: rgba(26, 26, 26, 0.98);
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: 0.4s ease;
+        transition: transform 0.4s ease;
+        transform: translateX(100%);
         z-index: 1000;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
     }
 
     .nav-links.active {
-        right: 0;
+        transform: translateX(0);
     }
 
     .nav-links li {
@@ -906,7 +912,8 @@ footer {
     }
 
     .stats-container {
-        padding: 1.5rem;
+        padding: 1.5rem 1rem;
+        gap: 1rem;
     }
 
     .stat-item h3 {
@@ -1034,6 +1041,8 @@ footer {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
+    padding: 0 5%;
 }
 
 /* Dynamic Hero */
