@@ -1049,6 +1049,12 @@ footer {
         padding-top: 4rem !important;
         padding-bottom: 3rem !important;
     }
+
+    /* Fix hero background on mobile */
+    .dynamic-bg {
+        background-attachment: scroll !important;
+        background-position: center !important;
+    }
 }
 
 /* New Home Page Enhancements */
