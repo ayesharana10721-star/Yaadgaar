@@ -1035,6 +1035,15 @@ footer {
     .stats-container {
         flex-direction: column;
     }
+
+    .welcome-text h2 {
+        font-size: 2rem !important;
+    }
+
+    #welcome {
+        padding-top: 4rem !important;
+        padding-bottom: 3rem !important;
+    }
 }
 
 /* New Home Page Enhancements */
@@ -1164,6 +1173,9 @@ footer {
 .floating-image {
     animation: floating 6s ease-in-out infinite;
     border-radius: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 @keyframes floating {
