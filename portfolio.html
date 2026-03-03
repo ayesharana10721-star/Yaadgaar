@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Yaadgaar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Yaadgaar</h1>
+                    <p>Unforgettable Every Time</p>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="pricing.html">Packages</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="btn-primary">Get a Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Our Gallery</h1>
+            <p>A glimpse into the magical moments and stunning themes we've created.</p>
+        </div>
+
+        <section>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wedding">Weddings</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="birthday">Birthdays</button>
+            </div>
+
+            <div class="gallery">
+                <!-- Wedding -->
+                <div class="gallery-item" data-category="wedding">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Wedding Stage">
+                    <div class="overlay">
+                        <h3>Ayesha & Bilal's Wedding</h3>
+                        <p>Royal Theme</p>
+                    </div>
+                </div>
+                <!-- Corporate -->
+                <div class="gallery-item" data-category="corporate">
+                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Corporate Conference">
+                    <div class="overlay">
+                        <h3>Tech Summit 2023</h3>
+                        <p>Minimalist Theme</p>
+                    </div>
+                </div>
+                <!-- Birthday -->
+                <div class="gallery-item" data-category="birthday">
+                    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Birthday Party">
+                    <div class="overlay">
+                        <h3>Zain's 1st Birthday</h3>
+                        <p>Jungle Theme</p>
+                    </div>
+                </div>
+                <!-- Wedding -->
+                <div class="gallery-item" data-category="wedding">
+                    <img src="nikkah.png" alt="Wedding Decor">
+                    <div class="overlay">
+                        <h3>Sana & Ali Nikkah</h3>
+                        <p>Floral Theme</p>
+                    </div>
+                </div>
+                <!-- Corporate -->
+                <div class="gallery-item" data-category="corporate">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Corporate Gala">
+                    <div class="overlay">
+                        <h3>Annual Awards Gala</h3>
+                        <p>Black & Gold Theme</p>
+                    </div>
+                </div>
+                <!-- Wedding -->
+                <div class="gallery-item" data-category="wedding">
+                    <img src="mehndi.png" alt="Outdoor Wedding">
+                    <div class="overlay">
+                        <h3>Fatima's Mehndi</h3>
+                        <p>Outdoor Vibrant Theme</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video highlight placeholder -->
+        <section style="background-color: var(--secondary); color: white; text-align: center;">
+            <div class="section-header">
+                <h2 style="color: white;">Experience The Magic (Video Highlights)</h2>
+                <p style="color: #aaa;">Watch our recent grand setups.</p>
+            </div>
+            <div
+                style="max-width: 800px; margin: 0 auto; background: #000; height: 450px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-play-circle"
+                    style="font-size: 5rem; color: var(--primary); cursor: pointer; transition: transform 0.3s;"></i>
+                <p style="position: absolute; margin-top: 100px; color: #fff;">Video Coming Soon</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Yaadgaar</h2>
+                <p>Unforgettable Every Time</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="pricing.html">Packages</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Event Street, Gulberg, Lahore</p>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fas fa-envelope"></i> hello@yaadgaar.pk</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Yaadgaar Events. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
